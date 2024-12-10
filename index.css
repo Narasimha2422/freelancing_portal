@@ -1,0 +1,399 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color:white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color:#111827;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgb(105, 231, 33);
+}
+
+.nav-links .profile-icon {
+    font-size: 24px; 
+    color: #333; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.nav-links .profile-icon:hover {
+    color: rgb(105, 231, 33); 
+}
+
+.btn-primary {
+    background-color:rgb(105, 231, 33);
+    padding: 0.8em 1.2em 0.8em 1em;
+    font-size: 16px;
+  }
+  
+.btn-primary:hover {
+    background-color: green;
+}
+  
+.search-box input[type="text"] {
+    size: 50px;
+    border: 5px solid grey;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://cdn4.vectorstock.com/i/1000x1000/92/08/girl-freelancer-working-on-a-laptop-at-home-vector-31269208.jpg") 
+                no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color:  rgb(105, 231, 33);
+    padding: 0.8em 1.2em 0.8em 1em;
+    font-size: 16px;
+}
+  
+.cta-btn:hover {
+    background-color:green;
+}
+/* Popular Services Section */
+.popular-services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    grid-row: span;
+}
+
+.popular-services h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popular-services p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.services {
+    gap: 20px;
+    color: antiquewhite;
+    flex-wrap: wrap;display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: peachpuff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.service img {
+    width: 300px;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+    
+.services a:hover {
+    background-color:  rgb(105, 231, 33);
+}
+
+button {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: rgb(105, 231, 33);
+    color: #ffffff;
+    font-weight: Bold;
+    display: flex; 
+    align-items: center;
+    margin:auto;
+  }
+  
+  button:hover {
+    background-color: rgb(105, 231, 33)f;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    background-color: rgb(105, 231, 33);
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+  /* Categories Section */
+  .searchcategory {
+    display: grid;
+    background-color: #f9f9f9;
+    grid-row: span;
+    margin-right: 0;
+    padding: 60px 20px;
+    text-align: center;
+    width: 50px;
+    flex-wrap: wrap;
+
+  }
+  .category {
+    gap: 20px;
+    color: black;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px 50px;
+    background-color: white;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .category h4 {
+    padding: 1.1rem;
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .category img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(239, 205, 255);
+  }
+  
+  .category a {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563EB;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .category span {
+    transition: .3s ease;
+  }
+  
+  .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color:#111827;
+    align-items: center;
+    margin: auto;
+  }
+  
+/* How It Works Section */
+.how-it-works {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.step {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    max-width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step h3 {
+    margin-bottom: 15px;
+    color: #2196F3;
+}
+
+.step p {
+    color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: linear-gradient(to right, #333, #555);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 300px;
+    max-width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.testimonial h4 {
+    font-weight: bold;
+    color: #2196F3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: white;
+    color: grey;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer .social-media a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #2196F3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .search-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .steps, .testimonial-container, .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step, .testimonial, .service img {
+        max-width: 80%;
+    }
+}

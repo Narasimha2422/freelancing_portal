@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancing Portal | Your Link to the Best Freelancers and Clients</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <!-- Header and Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/cli/project/p1/index.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTdRurK_12ESbJlmq7m5aqSqT-jM821SQ7ow&s" 
+                         alt="Freelancing Portal Logo">
+                    <span>Freelancing Portal</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/cli/project/p1/contactus.html">Contact</a></li>
+                <li><a href="fjob.html">Find Jobs</a></li>
+                <li><a href="#">Post a Service</a></li>
+                <li><a href="profile.html"><img src="https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg" height="50px"></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Contact Us</h1>
+        <p>Get in Touch with Us. We're Here to Help</p>
+    </div>
+    
+    <!-- Contact Section -->
+    <div class="contact">
+        <div class="address">
+            <h2>Reach Out to Us</h2>
+            <p>When we seek help, we create space for growth.</p>
+            <hr>
+            <div class="ad">
+                <p>Address: 7GJQ+P44, Saroornagar Mandal, Badangpet - Nadargul Main Rd, Hyderabad, Telangana 501510</p>
+            </div>
+            <div class="ad">
+                <p>Phone: +91 (555) 234-6789</p>
+            </div>
+            <div class="ad">
+                <p>Email: contact@freelancingportal.com</p>
+            </div>
+            <hr>
+        </div>
+        <br>
+        
+        <form action="save_contact.php" method="POST" class="tell-us">
+            <h2>Tell Us About Yourself</h2>
+            <p>Whether you have questions or you would just like to say hello, contact us.</p>
+            <input type="text" name="name" placeholder="Name" required> 
+            <br><br>
+            <input type="email" name="email" placeholder="Email" required> 
+            <br><br>
+            <textarea name="message" placeholder="Message" style="height:200px; width:100%;" required></textarea>
+            <br><br>
+            <button type="submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </div>
+    
+    <!-- Map -->
+    <div class="map">
+        <h2>Our Location</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.6994280530093!2d78.5378417!3d17.281770599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba3b7138f229b%3A0x58c171967385349e!2sMaturi%20Venkata%20Subba%20Rao%20Engineering%20College!5e0!3m2!1sen!2sin!4v1729424575023!5m2!1sen!2sin" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+    
+    <!-- FAQ -->
+    <div id="FAQ">
+        <h2>Frequently Asked Questions</h2>
+        <hr>
+        <div class="question">
+            <details>
+                <summary class="drop">
+                    <h3>Can I cancel at any time?</h3>
+                </summary>
+                <span class="answer">Yes, you can cancel at any time. However, if you are working on an active project with a client, we recommend informing them and coming to a mutual agreement before canceling to avoid any issues.</span>
+            </details>
+        </div>
+        <div class="question">
+            <details>
+                <summary class="drop">
+                    <h3>How do I get a receipt for my purchase?</h3>
+                </summary>
+                <span class="answer">Your receipt will be available immediately after your purchase is completed. Please download and save it for your records, as it won’t be reissued.</span>
+            </details>
+        </div>
+        <div class="question">
+            <details>
+                <summary class="drop">
+                    <h3>Which license do I need?</h3>
+                </summary>
+                <span class="answer">The type of license you need depends on how you plan to use the product or service. If you are using it for personal projects, a Standard License may be sufficient.</span>
+            </details>
+        </div>
+        <div class="question">
+            <details>
+                <summary class="drop">
+                    <h3>How do I get access to a theme I purchased?</h3>
+                </summary>
+                <span class="answer">Access to the theme you purchased can be requested directly from your employer. Simply reach out to them through the platform's messaging system.</span>
+            </details>
+        </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Freelancing Portal. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+    <script>
+        // script.js
+
+        // Wait for the DOM to fully load
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.querySelector(".tell-us"); // Select the contact form
+
+            // Add submit event listener to the form
+            form.addEventListener("submit", (event) => {
+                // Perform client-side validation
+                const name = form.querySelector("input[name='name']");
+                const email = form.querySelector("input[name='email']");
+                const message = form.querySelector("textarea[name='message']");
+
+                // Basic validation for empty fields
+                if (!name.value.trim()) {
+                    alert("Please enter your name.");
+                    name.focus();
+                    event.preventDefault(); // Stop form submission
+                    return;
+                }
+
+                if (!validateEmail(email.value)) {
+                    alert("Please enter a valid email address.");
+                    email.focus();
+                    event.preventDefault(); // Stop form submission
+                    return;
+                }
+
+                if (!message.value.trim()) {
+                    alert("Please enter a message.");
+                    message.focus();
+                    event.preventDefault(); // Stop form submission
+                    return;
+                }
+
+                // If validation passes, allow the form to submit
+            });
+
+            // Function to validate email format
+            function validateEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+
+            // Optional: Smooth scrolling for anchor links (if any)
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    document.querySelector(this.getAttribute("href")).scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>

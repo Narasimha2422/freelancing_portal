@@ -1,0 +1,104 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://cdn4.vectorstock.com/i/1000x1000/92/08/girl-freelancer-working-on-a-laptop-at-home-vector-31269208.jpg") 
+                no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Header Styling */
+.container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+}
+
+form .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-group textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Button Styling */
+button {
+    background-color: rgb(105, 231, 33);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: green;
+}
+
+/* Link Styling */
+.container a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
